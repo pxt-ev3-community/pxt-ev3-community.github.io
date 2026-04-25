@@ -52,9 +52,10 @@ jobs:
       - name: Pin legacy deps
         run: npm install typescript@3.9.10 @types/ws@8.5.4 --no-save
 
-      - name: Force local translations
+      - name: Apply pxtarget.json overrides
         run: |
-          sed -i 's/"appTheme": {/"appTheme": {"disableLiveTranslations": true,/' pxtarget.json
+          mv pxtarget.json pxtarget-original.json
+          jq -s '.[0] * .[1]' pxtarget-original.json github-deploy/pxtarget-override.json > pxtarget.json
 
       - name: Build static package
         run: pxt staticpkg --locs-src translations
