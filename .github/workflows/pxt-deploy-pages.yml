@@ -22,10 +22,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout pxt-ev3
+      - name: Get latest release tag of pxt-ev3
+        id: vars
+        run: |
+          TAG=$(gh release view --repo pxt-ev3-community/pxt-ev3 --json tagName --template '{{.tagName}}')
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout latest release of pxt-ev3
         uses: actions/checkout@v4
         with:
           repository: pxt-ev3-community/pxt-ev3
+          ref: ${{ steps.vars.outputs.tag }}
+
+      - name: Update version in package.json
+        run: |
+          CLEAN_VERSION=$(echo "${{ steps.vars.outputs.tag }}" | sed 's/^v//')
+          sed -i "s/\"version\": \".*\"/\"version\": \"$CLEAN_VERSION\"/" package.json
 
       - name: Checkout deploy tools
         uses: actions/checkout@v4
