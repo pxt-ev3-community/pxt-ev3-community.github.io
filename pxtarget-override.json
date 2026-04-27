@@ -51,6 +51,6 @@
                 "name": "Reference",
                 "path": "/reference"
             }],
-        "githubEditor": false
+        "githubEditor": true
     }
 }
