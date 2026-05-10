@@ -87,6 +87,11 @@ jobs:
         run: |
           cp -R github-deploy/extra-files/* built/packaged/
 
+      - name: Add custom .js and .css overrides
+        run: |
+          sed -i '/<\/head>/e cat github-deploy/extra-files/ev3-community.html' built/packaged/index.html
+          sed -i '/<\/head>/e cat github-deploy/extra-files/ev3-community.html' built/packaged/docs.html
+
       - name: Patch html json and manifest only
         run: |
           set -e

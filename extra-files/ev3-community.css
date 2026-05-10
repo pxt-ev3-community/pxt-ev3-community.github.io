@@ -3,12 +3,17 @@
     display: none;
 }
 
-.ev3beta header div.ui.logo.brand::after {
-    content: "pxt-ev3-community beta site";
-    font-size: 70%;
+.ev3beta header div.ui.logo.organization::after {
+    content: "Community beta";
 }
 
-header div.ui.logo.brand::after {
-    content: "pxt-ev3-community";
-    font-size: 70%;
+header div.ui.logo.organization::after {
+    content: "Community fork";
+    position: absolute;
+    right: 14px;
+    top: 75%;
+    font-size: 10px;
+    line-height: 1;
+    font-weight:600;
+    color: gray;
 }
