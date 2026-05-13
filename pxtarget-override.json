@@ -27,26 +27,6 @@
         "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
         "githubUrl": "https://github.com/pxt-ev3-community/pxt-ev3",
         "copyrightText": "LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are trademarks and/ or copyrights of the LEGO Group. ©2018 The LEGO Group. All rights reserved. This is a community maintained fork.",
-        "docMenu": [{
-                "name": "PXT-EV3 GitHub Discussions",
-                "path": "https://github.com/orgs/pxt-ev3-community/discussions"
-            },
-            {
-                "name": "MakeCode forum",
-                "path": "https://forum.makecode.com/"
-            },
-            {
-                "name": "Troubleshoot",
-                "path": "https://makecode.mindstorms.com/troubleshoot"
-            },
-            {
-                "name": "JavaScript",
-                "path": "/javascript"
-            },
-            {
-                "name": "Reference",
-                "path": "/reference"
-            }],
         "githubEditor": true
     }
 }
