@@ -1,7 +1,7 @@
 {
     "name": "LEGO® MINDSTORMS® Education EV3",
     "title": "LEGO® MINDSTORMS® Education EV3 - Blocks / Javascript editor - Community fork",
-    "description": "Community-maintained for of the Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3.",
+    "description": "Community-maintained fork of the MakeCode Blocks / JavaScript code editor for the LEGO® MINDSTORMS® Education EV3.",
     "cloud": {
         "workspace": false,
         "packages": true,
@@ -17,14 +17,17 @@
     },
     "appTheme": {
         "disableLiveTranslations": true,
-        "organization": "Microsoft MakeCode - community fork",
+        "organization": "pxt-ev3-community",
         "organizationUrl": "https://github.com/pxt-ev3-community",
-        "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
-        "organizationWideLogo": "./static/Microsoft-logo_rgb_c-gray.png",
+        "organizationLogo": "./static/icons/android-chrome-192x192.png",
+        "organizationWideLogo": "./community-logo.png",
+        "logo": "",
+        "docsLogo": "",
+        "portraitLogo": "",
         "homeUrl": "https://pxt-ev3-community.github.io/",
         "embedUrl": "https://pxt-ev3-community.github.io/",
-        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+        "privacyUrl": "https://github.com/pxt-ev3-community/",
+        "termsOfUseUrl": "https://github.com/pxt-ev3-community/",
         "githubUrl": "https://github.com/pxt-ev3-community/pxt-ev3",
         "copyrightText": "LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are trademarks and/ or copyrights of the LEGO Group. ©2018 The LEGO Group. All rights reserved. This is a community maintained fork.",
         "githubEditor": true
